@@ -10,10 +10,8 @@ public class PlayerController : TouchableGameObject
 {
     NavMeshAgent agent;
     Camera cam;
-    public float range = 4f;
     public LayerMask walkableLayer;
     public LayerMask collectibleLayer;
-    Vector3 actionPoint = Vector3.zero;
 
     void Awake()
     {
@@ -30,7 +28,6 @@ public class PlayerController : TouchableGameObject
     {
         if (Input.GetMouseButtonDown(1))
         {
-            actionPoint = Vector3.zero;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
