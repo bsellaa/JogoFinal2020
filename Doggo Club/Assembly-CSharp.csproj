@@ -68,12 +68,14 @@
      <Compile Include="Assets\Scripts\NavGame\Core\HealthUIController.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\InstantAttackerGameObject.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\InteractWithObject.cs" />
+     <Compile Include="Assets\Scripts\NavGame\Core\LoadPlayerStats.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\OffenseStats.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\TouchableGameObject.cs" />
      <Compile Include="Assets\Scripts\NavGame\Extensions\UnityExtensions.cs" />
      <Compile Include="Assets\Scripts\NavGame\Managers\AudioManager.cs" />
      <Compile Include="Assets\Scripts\NavGame\Managers\LevelManager.cs" />
      <Compile Include="Assets\Scripts\NavGame\Managers\NavigationManager.cs" />
+     <Compile Include="Assets\Scripts\NavGame\Managers\NextSceneAfterCooldown.cs" />
      <Compile Include="Assets\Scripts\NavGame\Managers\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\NavGame\Misc\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\NavGame\Misc\DestroyWithDelay.cs" />

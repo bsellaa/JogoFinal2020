@@ -26,4 +26,9 @@ public class NavigationManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void ResetPlayerPreffs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

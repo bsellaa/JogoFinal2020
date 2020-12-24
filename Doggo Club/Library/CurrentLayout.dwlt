@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 43
+  controlID: 14
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 30
+  controlID: 100
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -444,20 +444,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 243a0000
-      m_LastClickedID: 14884
-      m_ExpandedIDs: b4a1ffff20c0ffff38c1ffff1ec3ffff48c7fffffac7ffff38d9ffff72d9ffff30dbffff6adbffff7adfffff44e0ffff8ee0ffffd2e1ffff82e2ffffe0e7ffffeae8ffff24eaffff5aeaffff78eaffffaaeaffff20ecffff8cedffff70f3ffff48f4ffff72f5ffffdefbffff70330000
+      m_SelectedIDs: 4249ffff
+      m_LastClickedID: -46782
+      m_ExpandedIDs: a652ffff265dffffe265ffffba69ffff6073ffff2479ffff3a7bffffc07dffffca86ffff0a8fffff6294ffffce99ffffc69bffff7e9effffe0a4ffffbea5ffff5aabffff04aeffff36affffff0d8ffffe4d9ffff12dbffff2ce2ffffb2ecfffff8ecffff76f4ffff0cfaffff84faffffdefbffffe2320000aa3900003e3d00005c480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: UICanvas
-        m_OriginalName: UICanvas
+        m_Name: Player
+        m_OriginalName: Player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 14930
+        m_UserData: 18926
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -543,32 +543,32 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Characters
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Characters
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "C:\\Users\\vhugo\\OneDrive\\\xC1rea de Trabalho\\GOOOOOOO\\JogoFinal2020\\Doggo
     Club"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 18}
-    m_SelectedIDs: 400c0000
-    m_LastClickedID: 3136
-    m_ExpandedIDs: 00000000ac0900001a0a0000200c0000800c000000ca9a3b
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: 2e0a0000
+    m_LastClickedID: 2606
+    m_ExpandedIDs: 00000000b00900001e0a00001c0c00002c0c00008c0c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Materials
-      m_OriginalName: Materials
+      m_Name: Misc
+      m_OriginalName: Misc
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3004
+      m_UserData: 2946
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac0900001a0a0000500a00000e0c0000800c0000
+    m_ExpandedIDs: 00000000b00900001e0a00002c0c00008c0c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,15 +616,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlayerAutoController
-      m_OriginalName: PlayerAutoController
+      m_Name: TestFightScene
+      m_OriginalName: TestFightScene
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 18642
+      m_UserData: 2770
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -685,8 +685,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
       y: 17
       width: 696
       height: 350
-    m_Scale: {x: 0.6076389, y: 0.6076389}
+    m_Scale: {x: 1.1494657, y: 1.1494657}
     m_Translation: {x: 348, y: 175}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -707,10 +707,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -572.70856
-      y: -288
-      width: 1145.4171
-      height: 576
+      x: -302.74936
+      y: -152.24464
+      width: 605.4987
+      height: 304.4893
     m_MinimalGUI: 1
   m_defaultScale: 0.6076389
   m_TargetTexture: {fileID: 0}
@@ -747,13 +747,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: bab1bc30f4abcbd4ea88cabcd8d1dc29
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 3.8158112, y: 69.018234, z: -12.271354}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 3.8158112, y: 69.018234, z: -12.271354}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -773,28 +773,28 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: -0.07864527, y: 0.9065135, z: -0.36628428, w: -0.19463849}
+    m_Target: {x: 0, y: 0, z: 0, w: -1}
     speed: 2
-    m_Value: {x: -0.07864527, y: 0.9065135, z: -0.36628428, w: -0.19463849}
+    m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
-    m_Target: 22
+    m_Target: 1306.882
     speed: 2
-    m_Value: 22
+    m_Value: 1306.882
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: -0.1718044, y: 0.64841604, z: -0.15353322, w: -0.72558075}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}

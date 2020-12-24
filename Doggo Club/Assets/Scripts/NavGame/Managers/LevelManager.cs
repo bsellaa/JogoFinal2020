@@ -77,14 +77,5 @@ namespace NavGame.Managers
         }
 
         protected abstract IEnumerator SpawnBad();
-        
-        [Serializable]
-        public class Action
-        {
-            public int cost;
-            public GameObject prefab;
-            public float waitTime = 1f;
-            public float coolDown;
-        }
     }
 }

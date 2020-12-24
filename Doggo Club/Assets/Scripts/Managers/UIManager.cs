@@ -6,7 +6,6 @@ using NavGame.Managers;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject errorPanel;
     public GameObject defeatPanel;
     public GameObject victoryPanel;
     public Text errorText;
@@ -20,9 +19,6 @@ public class UIManager : MonoBehaviour
 
     void OnEnable()
     {
-        LevelManager.instance.onReportableError += OnReportableError;
-        LevelManager.instance.onWaveUpdate += OnWaveUpdate;
-        LevelManager.instance.onWaveCountdown += OnWaveCountdown;
         LevelManager.instance.onDefeat += OnDefeat;
         LevelManager.instance.onVictory += OnVictory;
     }
@@ -34,43 +30,12 @@ public class UIManager : MonoBehaviour
 
     void InitializeUI()
     {
-        cooldownImages = new Image[cooldownObjects.Length];
-        for(int i=0;i<cooldownObjects.Length;i++)
-        {
-            cooldownImages[i] = cooldownObjects[i].GetComponent<Image>();
-            cooldownImages[i].fillAmount = 0f;
 
-            actionCosts[i].text = "(" + LevelManager.instance.actions[i].cost + ")";
-        }
-        errorPanel.SetActive(false);
-    }
-
-    void OnActionSelect(int actionIndex)
-    {
-        cooldownImages[actionIndex].fillAmount = 1f;
-    }
-
-    void OnActionCancel(int actionIndex)
-    {
-        cooldownImages[actionIndex].fillAmount = 0f;
-    }
-
-    void OnActionCooldownUpdate(int actionIndex, float coolDown, float waitTime)
-    {
-        float percent = coolDown / waitTime;
-        cooldownImages[actionIndex].fillAmount = percent;
     }
 
     void OnResourceUpdate(int currentAmount)
     {
         coinText.text = "x " + currentAmount;
-    }
-
-    void OnReportableError(string message)
-    {
-        errorText.text = message;
-        errorPanel.SetActive(true);
-        StartCoroutine(TurnOffError());
     }
 
     void OnWaveUpdate(int totalWaves, int currentWave)
@@ -105,11 +70,5 @@ public class UIManager : MonoBehaviour
     {
         LevelManager.instance.Resume();
         NavigationManager.instance.LoadScene("Home");
-    }
-
-    IEnumerator TurnOffError()
-    {
-        yield return new WaitForSeconds(errorTime);
-        errorPanel.SetActive(false);
     }
 }
