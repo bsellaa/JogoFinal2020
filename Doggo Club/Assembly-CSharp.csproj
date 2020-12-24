@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Characters\CreepController.cs" />
+     <Compile Include="Assets\Scripts\Characters\PlayerAutoController.cs" />
      <Compile Include="Assets\Scripts\Characters\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Managers\Level01Manager.cs" />
      <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
