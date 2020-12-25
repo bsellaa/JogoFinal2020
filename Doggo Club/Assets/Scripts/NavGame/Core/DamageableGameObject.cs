@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NavGame.Managers;
 
 namespace NavGame.Core
 {
     public class DamageableGameObject : TouchableGameObject
     {
+        public GameObject defeatPanel;
+        public GameObject victoryPanel;
 		public DefenseStats defenseStats;
 		public int currentHealth;
         public Transform damageTransform;
@@ -49,14 +52,26 @@ namespace NavGame.Core
 
         public virtual void Die()
         {
+            bool isAlly=true;
             if (!isDead)
             {
+                if(gameObject.tag=="Enemy") isAlly=false;
                 isDead = true;
                 Destroy(gameObject);
                 if(onDied != null)
                 {
                     onDied();
                 }
+            }
+
+
+            if(isAlly)
+            {
+                defeatPanel.SetActive(true);
+            }
+            else
+            {
+                victoryPanel.SetActive(true);
             }
         }
     }

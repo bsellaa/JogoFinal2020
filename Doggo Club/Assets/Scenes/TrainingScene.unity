@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601b0cf7a1d557b46befc7586484c78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextSceneName: TestFightScene
+  NextSceneName: FightScene1
 --- !u!4 &152392440
 Transform:
   m_ObjectHideFlags: 0
@@ -924,6 +924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.5
+  defeatPanel: {fileID: 0}
+  victoryPanel: {fileID: 0}
   defenseStats:
     maxHealth: 100
     armor: 1

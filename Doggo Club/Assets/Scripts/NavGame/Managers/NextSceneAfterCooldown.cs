@@ -13,7 +13,6 @@ public class NextSceneAfterCooldown : MonoBehaviour
         yield return new WaitForSeconds(time);
     
         SceneManager.LoadScene(NextSceneName);
-        Debug.Log("CHEGOU AQUI");
     }
 
     void Start()
