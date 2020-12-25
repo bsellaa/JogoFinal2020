@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 5e65c4705606b524b8da77ae6f02e9c0
   - enabled: 1
-    path: Assets/Scenes/TestTraining.unity
+    path: Assets/Scenes/TrainingScene.unity
     guid: b9fe0205f3dc9d04482b6d0823e74fea
   - enabled: 1
-    path: Assets/Scenes/TestFightScene.unity
+    path: Assets/Scenes/FightScene1.unity
     guid: 36d5ac150c751b746b3f8344e6c81e24
   m_configObjects: {}
