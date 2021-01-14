@@ -18,6 +18,7 @@ public class LoadPlayerStats : MonoBehaviour
         if(PlayerPrefs.HasKey("damage")) instantAttackerGameObject.offenseStats.damage=PlayerPrefs.GetInt("damage");
 
         damageableGameObject.currentHealth=damageableGameObject.defenseStats.maxHealth;
+        Debug.Log(instantAttackerGameObject.offenseStats.attackSpeed);
     }
 
     void Update()

@@ -20,7 +20,6 @@ public class InteractWithObject : MonoBehaviour
             else if(other.name == "runningMachine") currentObject = "runningMachine";
             else if(other.name == "mattress") currentObject = "mattress";
         }
-        Debug.Log("ENTROU");
     }
 
     void OnTriggerExit(Collider other)
@@ -29,7 +28,6 @@ public class InteractWithObject : MonoBehaviour
         {
             isInTrigger = false;
         }
-        Debug.Log("SAIU");
     }
 
     void Awake()
