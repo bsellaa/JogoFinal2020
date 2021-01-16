@@ -14,15 +14,28 @@ public class InteractWithObject : MonoBehaviour
     public bool isPunching { get; private set; }
     public bool isRunning { get; private set; }
     public bool isCrunching { get; private set; }
+    public bool startedInteraction { get; private set; }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Interactable")
         {
             isInTrigger = true;
-            if(other.name == "punchBag") currentObject = "punchBag";
-            else if(other.name == "runningMachine") currentObject = "runningMachine";
-            else if(other.name == "mattress") currentObject = "mattress";
+            if(other.name == "punchBag")
+            {
+                currentObject = "punchBag";
+                isPunching = true;
+            }
+            else if(other.name == "runningMachine")
+            {
+                currentObject = "runningMachine";
+                isRunning = true;
+            }
+            else if(other.name == "mattress")
+            {
+                currentObject = "mattress";
+                isCrunching = true;
+            }
         }
     }
 
@@ -31,6 +44,10 @@ public class InteractWithObject : MonoBehaviour
         if(other.tag == "Interactable")
         {
             isInTrigger = false;
+            isPunching = false;
+            isRunning = false;
+            isCrunching = false;
+            startedInteraction = false;
         }
     }
 
@@ -46,6 +63,7 @@ public class InteractWithObject : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.F))
             {
+                startedInteraction = true;
                 GameObject points = Instantiate(floatingPoints, transform.position, Quaternion.identity) as GameObject;
                 if(currentObject == "punchBag")
                 {
