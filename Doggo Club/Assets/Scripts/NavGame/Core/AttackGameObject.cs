@@ -35,7 +35,9 @@ namespace NavGame.Core
 
 		protected virtual void Awake()
 		{
-			obj = GameObject.FindWithTag("Enemy");
+			if(gameObject.tag != "Enemy") obj = GameObject.FindWithTag("Enemy");
+			else obj = GameObject.FindWithTag("Player");
+
 			if(obj != null) enemyDamageable = obj.GetComponent<DamageableGameObject>();
 			agent = GetComponent<NavMeshAgent>();
 			enemyMask = LayerMask.GetMask(enemyLayers);
