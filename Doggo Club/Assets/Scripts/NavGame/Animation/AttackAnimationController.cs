@@ -19,7 +19,7 @@ namespace NavGame.Animation
         protected override void Update()
         {
             base.Update();
-            animator.SetBool("InCombat", attackGameObject.isInCombat);
+            animator.SetBool("isInCombat", attackGameObject.isInCombat);
         }
 
         void OnEnable()
