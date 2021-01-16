@@ -19,6 +19,8 @@ namespace NavGame.Core
 		[SerializeField]
 		protected List<DamageableGameObject> enemiesToAttack = new List<DamageableGameObject>();
 
+		DamageableGameObject enemyDamageable;
+
 		protected NavMeshAgent agent;
 
 		float cooldown = 0f;
@@ -29,8 +31,12 @@ namespace NavGame.Core
 		public OnAttackCastEvent onAttackCast;
 		public OnAttackStrikeEvent onAttackStrike;
 
+		GameObject obj;
+
 		protected virtual void Awake()
 		{
+			obj = GameObject.FindWithTag("Enemy");
+			if(obj != null) enemyDamageable = obj.GetComponent<DamageableGameObject>();
 			agent = GetComponent<NavMeshAgent>();
 			enemyMask = LayerMask.GetMask(enemyLayers);
 
@@ -48,14 +54,11 @@ namespace NavGame.Core
 
 		protected virtual void UpdateAttack()
 		{
-			if(enemiesToAttack.Count > 0)
-			{
-				agent.SetDestination(enemiesToAttack[0].gameObject.transform.position);
-				if (IsInRange(enemiesToAttack[0].gameObject.transform.position))
+			if(obj != null){
+				if (IsInRange(obj.gameObject.transform.position))
 				{
-					agent.ResetPath();
-					FaceObjectFrame(enemiesToAttack[0].gameObject.transform);
-					AttackOnCooldown(enemiesToAttack[0]);
+					FaceObjectFrame(obj.gameObject.transform);
+					AttackOnCooldown(enemyDamageable);
 					isInCombat = true;
 					return;
 				}

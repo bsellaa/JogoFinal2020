@@ -11,6 +11,10 @@ public class InteractWithObject : MonoBehaviour
     DamageableGameObject damageableGameObject;
     InstantAttackerGameObject instantAttackerGameObject;
 
+    public bool isPunching { get; private set; }
+    public bool isRunning { get; private set; }
+    public bool isCrunching { get; private set; }
+
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Interactable")
