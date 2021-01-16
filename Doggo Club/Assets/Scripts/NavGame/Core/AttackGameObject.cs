@@ -108,28 +108,6 @@ namespace NavGame.Core
 			}
 		}
 
-		void OnTriggerEnter(Collider other)
-		{
-			if (enemyMask.Contains(other.gameObject.layer))
-			{
-				DamageableGameObject obj = other.transform.parent.GetComponent<DamageableGameObject>();
-				if (!enemiesToAttack.Contains(obj))
-				{
-					enemiesToAttack.Add(obj);
-					obj.onDied += () => { enemiesToAttack.Remove(obj); };
-				}
-			}
-		}
-
-		void OnTriggerExit(Collider other)
-		{
-			if (enemyMask.Contains(other.gameObject.layer))
-			{
-				DamageableGameObject obj = other.transform.parent.GetComponent<DamageableGameObject>();
-				enemiesToAttack.Remove(obj);
-			}
-		}
-
 		public bool IsInRange(Vector3 point)
 		{
 			float distance = Vector3.Distance(transform.position, point);
