@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
      <Compile Include="Assets\Scripts\NavGame\Animation\AttackAnimationController.cs" />
      <Compile Include="Assets\Scripts\NavGame\Animation\BasicAnimationController.cs" />
+     <Compile Include="Assets\Scripts\NavGame\Animation\scrollTex.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\AttackGameObject.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\BasicGameObject.cs" />
      <Compile Include="Assets\Scripts\NavGame\Core\DamageableGameObject.cs" />
