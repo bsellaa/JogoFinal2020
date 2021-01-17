@@ -160,8 +160,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.5
-  defeatPanel: {fileID: 0}
-  victoryPanel: {fileID: 0}
+  defeatPanel: {fileID: 1748278496785225786, guid: 15523689f8a55464cbb75614406a1fb4,
+    type: 3}
+  victoryPanel: {fileID: 4075756175994959073, guid: 918656722309cb547ba872a1aa6b8435,
+    type: 3}
   defenseStats:
     maxHealth: 100
     armor: 1
